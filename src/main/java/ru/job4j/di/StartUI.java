@@ -3,15 +3,13 @@ package ru.job4j.di;
 public class StartUI {
 
     private Store store;
-    private ConsoleInput consoleInput;
 
-    public StartUI(Store store, ConsoleInput consoleInput) {
+    public StartUI(Store store) {
         this.store = store;
-        this.consoleInput = consoleInput;
     }
 
-    public void add() {
-        store.add(consoleInput.askStr("Enter name:" + System.lineSeparator()));
+    public void add(String value) {
+        store.add(value);
     }
 
     public void print() {
