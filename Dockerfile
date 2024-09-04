@@ -8,4 +8,6 @@ COPY . .
 
 RUN mvn install
 
-CMD ["java", "-jar", "target/job4j_di.jar"]
+ENTRYPOINT ["java", "-jar", "target/main.jar"]
+
+CMD [""]
