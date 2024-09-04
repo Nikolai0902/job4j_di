@@ -9,7 +9,6 @@ public class Main {
         context.refresh();
         StartUI ui = context.getBean(StartUI.class);
         ui.add();
-        ui.add();
         ui.print();
     }
 }
